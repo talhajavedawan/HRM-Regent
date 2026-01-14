@@ -50,7 +50,7 @@ def add_employee(request):
         department = request.POST['department']
         nationality = request.POST['nationality']
         share_code = request.POST.get('share_code')
-
+    #    share_code = request.POST.get('share_code')
         # 🇬🇧 UK employee → skip visa check
         if nationality == 'United Kingdom':
             Employee.objects.create(
