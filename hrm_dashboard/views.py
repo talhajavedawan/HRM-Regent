@@ -60,7 +60,7 @@ def add_employee(request):
                 visa_status='VALID',
                 share_code="Not Required"
             )
-            print("hello")
+            print("hello Django")
             return redirect('/hr/employees/')
 
         # 🌍 Non-UK → Share code mandatory
